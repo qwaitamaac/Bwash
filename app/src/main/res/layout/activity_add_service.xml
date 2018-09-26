@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddServiceActivity"
+    android:orientation="vertical"
+    android:background="#f1f1f1">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@drawable/ic_antion"
+    android:layout_marginBottom="50dp"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add your service"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        />
+</LinearLayout>
+
+<LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_margin="10dp">
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_servicename" />
+    <EditText
+        android:id="@+id/editText_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="10dp"
+        android:hint="Service Name"
+        android:inputType="text|textAutoCorrect|textCapWords"
+        android:textSize="15dp"
+        android:background="#fff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_margin="10dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_localtion"/>
+        <EditText
+            android:id="@+id/editText_Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:hint="Location"
+            android:layout_marginLeft="10dp"
+            android:inputType="text|number|textPostalAddress"
+            android:textSize="15dp"
+            android:background="@color/backgroundline"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_margin="10dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_timeopen"/>
+    <EditText
+        android:id="@+id/editText_OpenTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:hint="Opening time"
+        android:layout_marginLeft="10dp"
+        android:inputType="datetime|number"
+        android:textSize="15dp"
+        android:background="@color/backgroundline"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_margin="10dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_price"/>
+        <EditText
+            android:id="@+id/editText_Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:hint="Price range"
+            android:inputType="number"
+            android:textSize="15dp"
+            android:background="@color/backgroundline"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_desription"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Description of your service"
+                />
+        </LinearLayout>
+        <EditText
+
+            android:id="@+id/editText_desription"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:background="@color/backgroundline"
+            android:drawablePadding="10dp"
+            android:textSize="15dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp">
+        <Button
+            android:id="@+id/button_sumbit"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2554b"
+            android:fontFamily="Myriad Pro"
+            android:text="Sumbit Request"
+            android:textStyle="bold"
+            android:textColor="#ffff"/>
+    </LinearLayout>
+
+
+</LinearLayout>
